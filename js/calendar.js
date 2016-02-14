@@ -534,8 +534,10 @@
 
         if(year === null || month === null) return;
 
-        var redraw = false;
+        var redraw = false,
+            redraw_month = false;
         if(month != cal_date.month || year != cal_date.year) redraw = true;
+        if(year != cal_date.year) redraw_month = true;
 
         cal_date.month = month;
         cal_date.year = year;
@@ -556,6 +558,10 @@
         date = date.getMonth() == month && date.getFullYear() == year ? date.getDate() : 1;
 
         if(redraw)_this.drawDaysOfMonth(cal_date.month, cal_date.year);
+        if(redraw_month){
+            _this.selectYear(cal_date.year);
+            _this.drawMonths(cal_date.year);
+        }
         _this.custom_options.change(day, 'select_month');
         _this.selectDay(date, month, year);
         _this.showDays();
