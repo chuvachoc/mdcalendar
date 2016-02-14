@@ -1,5 +1,5 @@
 # mdcalendar
-MDCalendar - independent plugin for creating calendar.
+MDCalendar - independent plugin for creating calendar. You can select days, can click on month name in calendar header and choise month or click on year and choose any year
 
 For initializing calendar you have to call MDCalendar function with next parameters:
   - selector - string. Selector has to de like in jQuery ('.some_class', '#some_id' or 'element_tag'), except multiselectors
