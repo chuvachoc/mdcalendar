@@ -1,0 +1,15 @@
+AddDefaultCharset utf-8
+AddCharset utf-8 *
+<IfModule mod_charset.c>
+CharsetSourceEnc utf-8
+CharsetDefault utf-8
+</IfModule>
+<Files *.xml> 
+ForceType applicaton/xml  
+</Files>
+php_value session.gc_maxlifetime 604800
+
+RewriteEngine on 
+RewriteBase /
+
+RewriteRule ^production/(.*)?$  production/index.php?%{QUERY_STRING}

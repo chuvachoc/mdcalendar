@@ -1,0 +1,144 @@
+* {
+    padding:0px;
+    margin:0px;
+    outline: none;
+    text-decoration: none;
+    font-weight: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 100%;
+}
+
+body {
+    font-size: 1em;
+    /* min-width: 1000px; */
+    font-family: Arial;
+}
+
+.md_calendar_wrapper .md_year_btn {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+}
+
+.md_calendar_wrapper {
+    width: 300px;
+    position: relative;
+    border: 2px solid #2196F3;
+}
+
+.md_calendar_wrapper .md_cal_ypart {
+    text-align: center;
+    padding: 0px;
+}
+
+.md_calendar_wrapper .md_calendar_body {
+    position: relative;
+    height: 294px;
+    border-bottom: 2px solid #2196F3;
+}
+
+.md_calendar_wrapper .md_cal_ypart, .md_calendar_wrapper .md_cal_mpart, .md_calendar_wrapper .md_cal_dpart {
+    position: absolute;
+    background: #FFFFFF;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+    display: none;
+}
+
+.md_calendar_wrapper .md_month_btn, .md_calendar_wrapper .md_year_btn {
+    display: inline-block;
+    margin: 2px;
+    padding: 10px;
+}
+
+.md_calendar_wrapper .dpart_header {
+    width: 100%;
+    background-color: #2196F3;
+    color: #FFFFFF;
+}
+
+.md_calendar_wrapper .days_header_cell, .md_calendar_wrapper .md_day_btn {
+    display: inline-block;
+    padding: 10px 5px;
+    margin: 2px;
+    width: calc(100% / 7 - 14px);
+}
+
+.md_calendar_wrapper .dpart_body .md_date_today {
+    border: 2px solid #99ccff;
+    margin: 0px;
+}
+
+.md_calendar_wrapper .dpart_body .md_select_day {
+    background-color: #99ccff;
+    color: #ffffff;
+}
+
+.md_calendar_wrapper .md_day_btn {
+    color: #C1C1C1;
+}
+
+.md_calendar_wrapper .md_day_btn.md_cur_month_day {
+    color: #444444;
+}
+
+.md_calendar_wrapper .md_cal_select_page {
+    z-index: 11;
+    display: block;
+}
+
+.md_calendar_wrapper .md_current_month, .md_calendar_wrapper .md_current_year {
+    border: 2px solid #99ccff;
+    margin: 0px;
+}
+
+.md_calendar_wrapper .md_month_btn:hover, .md_calendar_wrapper .md_year_btn:hover, .md_calendar_wrapper .md_day_btn:hover {
+    background-color: #ffcc33;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.md_calendar_wrapper .md_header_part {
+    display: inline-block;
+}
+
+.md_calendar_wrapper #md_to_left, .md_calendar_wrapper #md_to_right {
+    padding: 10px;
+    width: 10px;
+    font-weight: 900;
+    color: #99ccff;
+}
+
+.md_calendar_wrapper #md_header_center {
+    padding: 10px 5px;
+    width: calc(100% - 70px);
+    text-align: center;
+}
+
+.md_calendar_wrapper #md_header_center span {
+    margin: 0px 5px;
+}
+
+.md_calendar_wrapper #md_to_left:hover, .md_calendar_wrapper #md_to_right:hover {
+    color: #ffcc33;
+    cursor: pointer;
+}
+
+.md_calendar_wrapper .md_calendar_header {
+    border-bottom: 2px solid #2196F3;
+}
+
+.md_calendar_wrapper .md_select_month, .md_calendar_wrapper .md_select_year {background: #99ccff;      color: #FFF;}
+
+.md_calendar_wrapper .md_calendar_footer {
+    font-size: 0.9em;
+    padding: 2px 10px;
+}
+
+div#div_block1 {
+    margin: 20px;
+}
