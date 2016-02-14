@@ -59,4 +59,4 @@ For initializing calendar you have to call MDCalendar function with next paramet
         }
       });
 
-Thanks for using:)
+Thanks for using:) 
