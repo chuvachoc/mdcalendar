@@ -40,23 +40,4 @@ For initializing calendar you have to call MDCalendar function with next paramet
 
   Function: MDCalendar( string : selector, [object : options] )
 
-  Example DOM:
-    - <div id="div_block1">Clendar block</div>
-
-  Example script:
-    - MDCalendar('#div_block1', {
-        first : 1,
-        lang : {
-          month   : "Місяць",
-          months  : "місяці",
-          day     : "день",
-          days    : "дні",
-          year    : "рік",
-          years   : "роки",
-          days_of     : ['неділя', 'понеділок', 'вівторок', 'середа', 'четверг', 'п\'ятниця', 'субота'],
-          daysMin     : ['Нд', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
-          months_of   : ['Січень', 'Лютий', 'Березень', 'Квітень', 'Травень', 'Червень', 'Липень', 'Серпень', 'Вересень', 'Жовтень', 'Листопад', 'Грудень']
-        }
-      });
-
 Thanks for using:) 
