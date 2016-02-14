@@ -41,10 +41,10 @@ For initializing calendar you have to call MDCalendar function with next paramet
   Function: MDCalendar( string : selector, [object : options] )
 
   Example DOM:
-      <div id="div_block1">Clendar block</div>
+    - <div id="div_block1">Clendar block</div>
 
   Example script:
-      MDCalendar('#div_block1', {
+    - MDCalendar('#div_block1', {
         first : 1,
         lang : {
           month   : "Місяць",
