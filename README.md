@@ -6,25 +6,25 @@ For initializing calendar you have to call MDCalendar function with next paramet
   - options - object. Collection of different parameters and callback functions
 
   In 'options' available next parameters:
-        - prefix  : 'md_',    // prefix before each class
-        - first   : 0,        // First day in week. 0 - Sunday, 1 - Monday
-        - lang    : {         // locazation
-            month   : "Month",
-            months  : "Months",
-            day     : "Day",
-            days    : "Days",
-            year    : "Year",
-            years   : "Years",
-            days_of     : ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-            daysMin     : ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
-            months_of   : ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
-        },
-        - draw_year   : function(elem){},     // calls after each call to draw cell of year.    elem - pointer on years block after created
-        - draw_month  : function(elem){},     // after each call to draw cell of month  elem - pointer on months block after created
-        - draw_day    : function(elem){},     // after each call to draw cell of day    elem - pointer on days block  after created
-        - init        : function(elem){},     // after initialize calendar  elem - pointer on calendar after created
-        - select      : function(elem){},     // after select the day   elem - pointer on select block after click
-        - change      : function(elem, type){},     // after each change in calendar (just structure changes).   elem - pointer on some elements, type - type of change
+    - prefix  : 'md_',    // prefix before each class
+    - first   : 0,        // First day in week. 0 - Sunday, 1 - Monday
+    - lang    : {         // locazation
+        month   : "Month",
+        months  : "Months",
+        day     : "Day",
+        days    : "Days",
+        year    : "Year",
+        years   : "Years",
+        ays_of     : ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+        daysMin     : ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+        months_of   : ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+    },
+    - draw_year   : function(elem){},     // calls after each call to draw cell of year.    elem - pointer on years block after created
+    - draw_month  : function(elem){},     // after each call to draw cell of month  elem - pointer on months block after created
+    - draw_day    : function(elem){},     // after each call to draw cell of day    elem - pointer on days block  after created
+    - init        : function(elem){},     // after initialize calendar  elem - pointer on calendar after created
+    - select      : function(elem){},     // after select the day   elem - pointer on select block after click
+    - change      : function(elem, type){},     // after each change in calendar (just structure changes).   elem - pointer on some elements, type - type of change
 
   Types of change function :
     - created_wrapper
