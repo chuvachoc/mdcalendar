@@ -26,18 +26,18 @@ For initializing calendar you have to call MDCalendar function with next paramet
     - select      : function(elem){},     // after select the day   elem - pointer on select block after click
     - change      : function(elem, type){},     // after each change in calendar (just structure changes).   elem - pointer on some elements, type - type of change
 
-  Types of change function:
-    - created_wrapper
-    - change_date
-    - select_years_page
-    - select_months_page
-    - select_days_page
-    - select_month
-    - select_year
-    - select_day
+Types of change function:
+  - created_wrapper
+  - change_date
+  - select_years_page
+  - select_months_page
+  - select_days_page
+  - select_month
+  - select_year
+  - select_day
 
-  All parameters in the 'options' are not required and can be skipped. 
+All parameters in the 'options' are not required and can be skipped. 
 
-  Function: MDCalendar( string : selector, [object : options] )
+Function: MDCalendar( string : selector, [object : options] )
 
 Thanks for using:) 
