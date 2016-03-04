@@ -1,12 +1,3 @@
-/assets/*
-/framework/*
-/protected/runtime/*
-*.egg
-*.egg-info
-.idea/encodings.xml
-.idea/workspace.xml
-.idea/
-
 #################
 ## Eclipse
 #################
