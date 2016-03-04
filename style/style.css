@@ -121,6 +121,7 @@ body {
 
 .md_calendar_wrapper #md_header_center span {
     margin: 0px 5px;
+    cursor: pointer;
 }
 
 .md_calendar_wrapper #md_to_left:hover, .md_calendar_wrapper #md_to_right:hover {

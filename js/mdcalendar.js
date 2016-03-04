@@ -1,6 +1,4 @@
 /**
- * Created by Denys on 13.02.2016.
- *
  * MDCalendar - independent plugin for creating calendar. You can select days, can click on month name in calendar header and choise month or click on year and choose any year
  *
  * For initializing calendar you have to call MDCalendar function with next parameters:
@@ -9,8 +7,8 @@
  *
  *  In 'options' available next parameters:
  *      - prefix  : 'md_',    // prefix before each class
-        - first   : 0,        // First day in week. 0 - Sunday, 1 - Monday
-        - lang    : {         // locazation
+ - first   : 0,        // First day in week. 0 - Sunday, 1 - Monday
+ - lang    : {         // locazation
             month   : "Month",
             months  : "Months",
             day     : "Day",
@@ -21,47 +19,41 @@
             daysMin     : ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
             months_of   : ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
         },
-        - draw_year   : function(elem){},     // calls after each call to draw cell of year.    elem - pointer on years block after created
-        - draw_month  : function(elem){},     // after each call to draw cell of month  elem - pointer on months block after created
-        - draw_day    : function(elem){},     // after each call to draw cell of day    elem - pointer on days block  after created
-        - init        : function(elem){},     // after initialize calendar  elem - pointer on calendar after created
-        - select      : function(elem){},     // after select the day   elem - pointer on select block after click
-        - change      : function(elem, type){},     // after each change in calendar (just structure changes).   elem - pointer on some elements, type - type of change
-
-    Types of change function :
-        - created_wrapper
-        - change_date
-        - select_years_page
-        - select_months_page
-        - select_days_page
-        - select_month
-        - select_year
-        - select_day
-
-    All parameters in 'options' array is not important and can be skipped.
-
-        Function: MDCalendar( string : selector, [object : options] )
-
-    Example DOM:
-        <div id="div_block1">Clendar block</div>
-
-    Example script:
-        MDCalendar('#div_block1', {
+ - draw_year   : function(elem){},     // calls after each call to draw cell of year.    elem - pointer on years block after created
+ - draw_month  : function(elem){},     // after each call to draw cell of month  elem - pointer on months block after created
+ - draw_day    : function(elem){},     // after each call to draw cell of day    elem - pointer on days block  after created
+ - init        : function(elem){},     // after initialize calendar  elem - pointer on calendar after created
+ - select      : function(elem){},     // after select the day   elem - pointer on select block after click
+ - change      : function(elem, type){},     // after each change in calendar (just structure changes).   elem - pointer on some elements, type - type of change
+ Types of change function :
+ - created_wrapper
+ - change_date
+ - select_years_page
+ - select_months_page
+ - select_days_page
+ - select_month
+ - select_year
+ - select_day
+ All parameters in 'options' array is not important and can be skipped.
+ Function: MDCalendar( string : selector, [object : options] )
+ Example DOM:
+ <div id="div_block1">Clendar block</div>
+ Example script:
+ MDCalendar('#div_block1', {
                 first : 1,
                 lang : {
-                    month   : "РњС–СЃСЏС†СЊ",
-                    months  : "РјС–СЃСЏС†С–",
-                    day     : "РґРµРЅСЊ",
-                    days    : "РґРЅС–",
-                    year    : "СЂС–Рє",
-                    years   : "СЂРѕРєРё",
-                    days_of     : ['РЅРµРґС–Р»СЏ', 'РїРѕРЅРµРґС–Р»РѕРє', 'РІС–РІС‚РѕСЂРѕРє', 'СЃРµСЂРµРґР°', 'С‡РµС‚РІРµСЂРі', 'Рї\'СЏС‚РЅРёС†СЏ', 'СЃСѓР±РѕС‚Р°'],
-                    daysMin     : ['РќРґ', 'РџРЅ', 'Р’С‚', 'РЎСЂ', 'Р§С‚', 'РџС‚', 'РЎР±'],
-                    months_of   : ['РЎС–С‡РµРЅСЊ', 'Р›СЋС‚РёР№', 'Р‘РµСЂРµР·РµРЅСЊ', 'РљРІС–С‚РµРЅСЊ', 'РўСЂР°РІРµРЅСЊ', 'Р§РµСЂРІРµРЅСЊ', 'Р›РёРїРµРЅСЊ', 'РЎРµСЂРїРµРЅСЊ', 'Р’РµСЂРµСЃРµРЅСЊ', 'Р–РѕРІС‚РµРЅСЊ', 'Р›РёСЃС‚РѕРїР°Рґ', 'Р“СЂСѓРґРµРЅСЊ']
+                    month   : "Місяць",
+                    months  : "місяці",
+                    day     : "день",
+                    days    : "дні",
+                    year    : "рік",
+                    years   : "роки",
+                    days_of     : ['неділя', 'понеділок', 'вівторок', 'середа', 'четверг', 'п\'ятниця', 'субота'],
+                    daysMin     : ['Нд', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+                    months_of   : ['Січень', 'Лютий', 'Березень', 'Квітень', 'Травень', 'Червень', 'Липень', 'Серпень', 'Вересень', 'Жовтень', 'Листопад', 'Грудень']
                 }
             });
-
-    Thanks for using:)
+ Thanks for using:)
  */
 
 
@@ -195,9 +187,9 @@
             header = '<div class="'+prefix+'calendar_header">'+
                 '<div id="'+prefix+'to_left" class="'+prefix+'header_part"><</div>'+
                 '<div id="'+prefix+'header_center" class="'+prefix+'header_part">'+
-                    '<span id="'+prefix+'header_date" class="'+prefix+'header_center"></span>'+
-                    '<span id="'+prefix+'header_month" class="'+prefix+'header_center"></span>'+
-                    '<span id="'+prefix+'header_year" class="'+prefix+'header_center"></span></div>'+
+                '<span id="'+prefix+'header_date" class="'+prefix+'header_center"></span>'+
+                '<span id="'+prefix+'header_month" class="'+prefix+'header_center"></span>'+
+                '<span id="'+prefix+'header_year" class="'+prefix+'header_center"></span></div>'+
                 '<div id="'+prefix+'to_right" class="'+prefix+'header_part">></div></div>',
             body_s = '<div class="'+prefix+'calendar_body">',
             bode_e = '</div>',

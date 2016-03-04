@@ -1,14 +1,14 @@
 # mdcalendar
 MDCalendar - independent plugin for creating calendar. You can select days, can click on month name in calendar header and choise month or click on year and choose any year
 
-For initializing calendar you have to call MDCalendar function with next parameters:
+For initializing calendar you have to call MDCalendar function with following parameters:
   - selector - string. Selector has to de like in jQuery ('.some_class', '#some_id' or 'element_tag'), except multiselectors
   - options - object. Collection of different parameters and callback functions
 
-  In 'options' available next parameters:
+  In 'options' available the following parameters:
         - prefix  : 'md_',    // prefix before each class
         - first   : 0,        // First day in week. 0 - Sunday, 1 - Monday
-        - lang    : {         // locazation
+        - lang    : {         // localization
             month   : "Month",
             months  : "Months",
             day     : "Day",
@@ -47,15 +47,15 @@ For initializing calendar you have to call MDCalendar function with next paramet
       MDCalendar('#div_block1', {
                 first : 1,
                 lang : {
-                    month   : "Місяць",
-                    months  : "місяці",
-                    day     : "день",
-                    days    : "дні",
-                    year    : "рік",
-                    years   : "роки",
-                    days_of     : ['неділя', 'понеділок', 'вівторок', 'середа', 'четверг', 'п\'ятниця', 'субота'],
-                    daysMin     : ['Нд', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
-                    months_of   : ['Січень', 'Лютий', 'Березень', 'Квітень', 'Травень', 'Червень', 'Липень', 'Серпень', 'Вересень', 'Жовтень', 'Листопад', 'Грудень']
+                    month   : "РњС–СЃСЏС†СЊ",
+                    months  : "РјС–СЃСЏС†С–",
+                    day     : "РґРµРЅСЊ",
+                    days    : "РґРЅС–",
+                    year    : "СЂС–Рє",
+                    years   : "СЂРѕРєРё",
+                    days_of     : ['РЅРµРґС–Р»СЏ', 'РїРѕРЅРµРґС–Р»РѕРє', 'РІС–РІС‚РѕСЂРѕРє', 'СЃРµСЂРµРґР°', 'С‡РµС‚РІРµСЂРі', 'Рї\'СЏС‚РЅРёС†СЏ', 'СЃСѓР±РѕС‚Р°'],
+                    daysMin     : ['РќРґ', 'РџРЅ', 'Р’С‚', 'РЎСЂ', 'Р§С‚', 'РџС‚', 'РЎР±'],
+                    months_of   : ['РЎС–С‡РµРЅСЊ', 'Р›СЋС‚РёР№', 'Р‘РµСЂРµР·РµРЅСЊ', 'РљРІС–С‚РµРЅСЊ', 'РўСЂР°РІРµРЅСЊ', 'Р§РµСЂРІРµРЅСЊ', 'Р›РёРїРµРЅСЊ', 'РЎРµСЂРїРµРЅСЊ', 'Р’РµСЂРµСЃРµРЅСЊ', 'Р–РѕРІС‚РµРЅСЊ', 'Р›РёСЃС‚РѕРїР°Рґ', 'Р“СЂСѓРґРµРЅСЊ']
                 }
             });
 
