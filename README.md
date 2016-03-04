@@ -36,7 +36,7 @@ For initializing calendar you have to call MDCalendar function with next paramet
   - select_year
   - select_day
 
-  All parameters in the 'options' are not required and can be skipped.
+  All parameters in the 'options' are not required and can be skipped. 
 
   Function: MDCalendar( string : selector, [object : options] )
 
